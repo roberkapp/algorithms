@@ -15,7 +15,7 @@ export function wordGuesser(word: string, guess: string) {
 
     if (attempt === letter) {
       response[i] = 2;
-      const count = letters.get(letter)!;
+      const count = letters.get(letter) ?? 0;
       if (count === 1) {
         letters.delete(letter);
       } else {
@@ -33,7 +33,7 @@ export function wordGuesser(word: string, guess: string) {
     if (letters.has(attempt)) {
       response[i] = 1;
 
-      const count = letters.get(attempt)!;
+      const count = letters.get(attempt) ?? 0;
       if (count === 1) {
         letters.delete(attempt);
       } else {

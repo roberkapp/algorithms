@@ -1,7 +1,7 @@
 export function getLoanSchedule(
   loanAmount: number,
   annualRate: number,
-  monthlyPayment: number
+  monthlyPayment: number,
 ): number[] {
   const remainingBalances = [loanAmount];
   const interestRate = annualRate / 100 / 12;

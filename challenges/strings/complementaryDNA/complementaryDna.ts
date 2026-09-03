@@ -1,4 +1,4 @@
-import { Letter } from './models';
+import type { Letter } from './models';
 
 const complements: Record<Letter, Letter> = {
   A: 'T',

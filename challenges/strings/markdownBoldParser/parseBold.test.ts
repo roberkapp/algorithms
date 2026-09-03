@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { parseBold } from './parseBold';
 
 test('Given a markdown "**This is bold**" should return this html: "<b>This is bold</b>"', () => {

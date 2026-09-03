@@ -1,4 +1,4 @@
-import { Tier } from './models';
+import type { Tier } from './models';
 
 const tiers: Record<number, Tier> = {
   1: { base: 4.99, late: 3.99 },
@@ -17,11 +17,7 @@ function getTotalFee(due: Date, returned: Date, lateFee: number): number {
   return counter * lateFee;
 }
 
-export function getRentalCost(
-  rented: string,
-  returned: string,
-  tier: number
-): string {
+export function getRentalCost(rented: string, returned: string, tier: number): string {
   const _returned = new Date(returned);
 
   // el vencimiento lo voy a calcular a partir de cuando lo rento + el tier

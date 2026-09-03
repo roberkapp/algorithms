@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { findWord } from './wordSearch';
-import { test, expect } from '@jest/globals';
 
 test('Given this matrix: [["a", "c", "t"], ["t", "a", "t"], ["c", "t", "c"]] and the word "cat" should return the coordinates: [[0, 1],[2, 1]]', () => {
   expect(
@@ -9,8 +9,8 @@ test('Given this matrix: [["a", "c", "t"], ["t", "a", "t"], ["c", "t", "c"]] and
         ['t', 'a', 't'],
         ['c', 't', 'c'],
       ],
-      'cat'
-    )
+      'cat',
+    ),
   ).toEqual([
     [0, 1],
     [2, 1],
@@ -26,8 +26,8 @@ test('Given this matrix: [["h", "i", "s", "h"], ["i", "s", "f", "s"], ["f", "s",
         ['f', 's', 'i', 'i'],
         ['s', 'h', 'i', 'f'],
       ],
-      'fish'
-    )
+      'fish',
+    ),
   ).toEqual([
     [3, 3],
     [0, 3],

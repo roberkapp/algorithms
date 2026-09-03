@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { burnCandles } from './burnCandles';
 
 test('Given 7 candles and 2 leftovers to create a new one thisbshould return 13 candles', () => {

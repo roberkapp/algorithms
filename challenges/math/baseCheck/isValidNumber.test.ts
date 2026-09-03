@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { isValidNumber } from './isValidNumber';
-import { test, expect } from '@jest/globals';
 
 test('Given a string: "10101" and a base: 2 should return true', () => {
   expect(isValidNumber('10101', 2)).toBeTruthy();

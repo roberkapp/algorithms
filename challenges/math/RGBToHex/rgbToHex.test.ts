@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { rgbToHex } from './rgbToHex';
 
 test('Given an rgb code: 255, 255, 255 should return "#ffffff"', () => {

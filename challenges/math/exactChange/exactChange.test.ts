@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { exactChange } from './exactChange';
 
 test('returns how many ways of retrieving change are', () => {

@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { knightMoves } from './knightMoves';
-import { test, expect } from '@jest/globals';
 
 test('given A1 should return 2 moves', () => {
   expect(knightMoves('A1')).toBe(2);

@@ -1,7 +1,4 @@
-export function tribonacciSequence(
-  startSequence: number[],
-  length: number
-): number[] {
+export function tribonacciSequence(startSequence: number[], length: number): number[] {
   const sequence = [...startSequence];
   if (sequence.length > length) return sequence.slice(0, length);
 

@@ -1,6 +1,6 @@
-import { test, expect } from '@jest/globals';
-import { numberOfFiles } from './numberOfFiles';
+import { expect, test } from '@jest/globals';
 import { UNITS } from './models';
+import { numberOfFiles } from './numberOfFiles';
 
 test('Given files with size of 500KB each and a drive of 1GB should return 2000 files to save', () => {
   expect(numberOfFiles(500, UNITS.KB, 1)).toEqual(2000);

@@ -1,4 +1,4 @@
-import { Percentages, ZODIACS } from './models';
+import { type Percentages, ZODIACS } from './models';
 
 const zodiacs: ZODIACS[] = [
   ZODIACS.ARIES,

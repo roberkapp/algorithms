@@ -1,4 +1,4 @@
-import { Pair } from './modes';
+import type { Pair } from './modes';
 
 export function getFoodChain(pairs: Pair[]): string[] {
   const chain = new Map<string, string>();

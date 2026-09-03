@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { isSpam } from './isSpam';
 
 test('Given a phone number: "+0 (200) 234-0182" should return false', () => {

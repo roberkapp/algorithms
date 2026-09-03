@@ -7,6 +7,6 @@ test('given a grid with 3 towers, returns the cell position', () => {
       [0, 2, 0],
       [1, 0, 0],
       [0, 0, 1],
-    ])
+    ]),
   ).toEqual([2, 1]);
 });

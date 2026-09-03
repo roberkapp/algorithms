@@ -1,4 +1,4 @@
-import { Grid } from './models';
+import type { Grid } from './models';
 
 export const findZero = (grid: Grid): number[] => {
   for (let row = 0; row < grid.length; row++) {
@@ -13,7 +13,7 @@ export const findZero = (grid: Grid): number[] => {
 
 export const getRowSum = (
   grid: Grid,
-  zeroRow: number
+  zeroRow: number,
 ): { magicNumRow: number; isPossibleRow: boolean } => {
   let magicNumRow = 0,
     isPossibleRow = true;
@@ -33,7 +33,7 @@ export const getRowSum = (
 
 export const getColSum = (
   grid: Grid,
-  zeroCol: number
+  zeroCol: number,
 ): { magicNumCol: number; isPossibleCol: boolean } => {
   let magicNumCol = 0,
     isPossibleCol = true;
@@ -50,9 +50,7 @@ export const getColSum = (
   return { magicNumCol, isPossibleCol };
 };
 
-export const getDiagonalSum = (
-  grid: Grid
-): { diagonalSum: number | null; isPossible: boolean } => {
+export const getDiagonalSum = (grid: Grid): { diagonalSum: number | null; isPossible: boolean } => {
   let diagonalSum = null,
     isPossible = true;
 
@@ -69,11 +67,7 @@ export const getDiagonalSum = (
   return { diagonalSum, isPossible };
 };
 
-export const getMagicNumber = (
-  grid: Grid,
-  zeroRow: number,
-  zeroCol: number
-) => {
+export const getMagicNumber = (grid: Grid, zeroRow: number, zeroCol: number) => {
   const { magicNumRow, isPossibleRow } = getRowSum(grid, zeroRow);
   const { magicNumCol, isPossibleCol } = getColSum(grid, zeroCol);
   const { diagonalSum, isPossible } = getDiagonalSum(grid);

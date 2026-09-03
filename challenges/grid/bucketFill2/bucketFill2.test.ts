@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { bucketFill2 } from './bucketFill2';
-import { test, expect } from '@jest/globals';
 
 test('Given a grid [["R", "R"], ["R", "R"]] and a target color equal to "G" should return 1 click', () => {
   expect(
@@ -8,8 +8,8 @@ test('Given a grid [["R", "R"], ["R", "R"]] and a target color equal to "G" shou
         ['R', 'R'],
         ['R', 'R'],
       ],
-      'G'
-    )
+      'G',
+    ),
   ).toBe(1);
 });
 
@@ -23,7 +23,7 @@ test('Given a grid [["G", "G", "C", "C", "O"], ["B", "Y", "B", "Y", "O"], ["B", 
         ['G', 'Y', 'Y', 'Y', 'B'],
         ['G', 'P', 'P', 'G', 'G'],
       ],
-      'Y'
-    )
+      'Y',
+    ),
   ).toBe(12);
 });

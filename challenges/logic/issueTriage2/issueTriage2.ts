@@ -15,8 +15,7 @@ export function triageIssue2(title: string, labels: LABELS[]): LABELS[] {
 
   if (newLabels.has(LABELS.NEEDS_TRIAGE)) {
     newLabels.delete(LABELS.NEEDS_TRIAGE);
-    if (patterns.goodFirstIssue.test(title))
-      newLabels.add(LABELS.GOOD_FIRST_ISSUE);
+    if (patterns.goodFirstIssue.test(title)) newLabels.add(LABELS.GOOD_FIRST_ISSUE);
     else newLabels.add(LABELS.HELP_WANTED);
   }
 

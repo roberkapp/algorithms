@@ -16,7 +16,9 @@ const getConsecutives = (arr: number[]): number => {
 // @CodeScene(disable:"Complex Method")
 export function fiveDice(dices: number[]): HANDS {
   const ocurrences: Record<string, number> = {};
-  dices.forEach((dice) => (ocurrences[dice] = ocurrences[dice] + 1 || 1));
+  dices.forEach((dice) => {
+    ocurrences[dice] = (ocurrences[dice] ?? 0) + 1;
+  });
 
   const hand = Object.values(ocurrences);
   const uniques = Object.keys(ocurrences)

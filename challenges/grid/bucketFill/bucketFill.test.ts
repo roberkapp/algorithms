@@ -9,8 +9,8 @@ test('replaces the first G for B', () => {
         ['R', 'G'],
       ],
       [0, 1],
-      'B'
-    )
+      'B',
+    ),
   ).toEqual([
     ['R', 'B'],
     ['R', 'B'],

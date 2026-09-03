@@ -1,4 +1,4 @@
-import { UNITS } from './models';
+import type { UNITS } from './models';
 
 export const bytesEquivalences: Record<UNITS, number> = {
   B: 1,

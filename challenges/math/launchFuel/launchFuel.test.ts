@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { launchFuel } from './launchFuel';
 
 test('Given a payload of 50kg should return a total fuel of 12.4', () => {

@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { parseRomanNumeral } from './parseRomanNumeral';
 
 test('Given a roman number "III" should return 3', () => {

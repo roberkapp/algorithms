@@ -1,6 +1,5 @@
 const orientationChecker = (qrCode: string[]): boolean => {
-  const topRowValidations =
-    qrCode.at(0)?.startsWith('11') && qrCode.at(0)?.endsWith('11');
+  const topRowValidations = qrCode.at(0)?.startsWith('11') && qrCode.at(0)?.endsWith('11');
   const bottomRowValidation = qrCode.at(-1)?.startsWith('11');
 
   return (topRowValidations && bottomRowValidation) || false;

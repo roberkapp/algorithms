@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { isValidNonogram } from './nonogramValidator';
 
 test('Given a clue of [3, 2] and an array of cells: [1, 1, 1, 0, 1, 1]', () => {
@@ -10,7 +10,5 @@ test('Given a clue of [3, 2] and an array of cells: [0, 1, 1, 1, 1, 1]', () => {
 });
 
 test('Given a clue of [1, 1, 1, 1] and an array of cells: [1, 0, 1, 0, 1, 0, 1, 0, 1]', () => {
-  expect(
-    isValidNonogram([1, 1, 1, 1], [1, 0, 1, 0, 1, 0, 1, 0, 1])
-  ).toBeFalsy();
+  expect(isValidNonogram([1, 1, 1, 1], [1, 0, 1, 0, 1, 0, 1, 0, 1])).toBeFalsy();
 });

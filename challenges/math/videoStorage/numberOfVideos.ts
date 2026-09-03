@@ -1,14 +1,11 @@
-import {
-  bytesDriveUnitEquivalences,
-  bytesVideoUnitEquivalences,
-} from './constants';
-import { DRIVE_UNITS, Response, VIDEO_UNITS } from './models';
+import { bytesDriveUnitEquivalences, bytesVideoUnitEquivalences } from './constants';
+import type { DRIVE_UNITS, Response, VIDEO_UNITS } from './models';
 
 export function numberOfVideos(
   videoSize: number,
   videoUnit: VIDEO_UNITS,
   driveSize: number,
-  driveUnit: DRIVE_UNITS
+  driveUnit: DRIVE_UNITS,
 ): Response {
   const videoUnitEquivalence = bytesVideoUnitEquivalences[videoUnit];
   const driveUnitEquivalence = bytesDriveUnitEquivalences[driveUnit];
@@ -16,7 +13,5 @@ export function numberOfVideos(
   if (!videoUnitEquivalence) return 'Invalid video unit';
   if (!driveUnitEquivalence) return 'Invalid drive unit';
 
-  return Math.floor(
-    (driveSize * driveUnitEquivalence) / (videoSize * videoUnitEquivalence)
-  );
+  return Math.floor((driveSize * driveUnitEquivalence) / (videoSize * videoUnitEquivalence));
 }

@@ -1,4 +1,4 @@
-import { Grid, ResponseMagicSquare } from './models';
+import type { Grid, ResponseMagicSquare } from './models';
 import { findZero, getMagicNumber } from './utils';
 
 export function solveMagicSquare(grid: Grid): ResponseMagicSquare {

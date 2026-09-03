@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { getContrastRating } from './getContrastRating';
 
 test('Given a ration of 7.5 and normal text should return AAA', () => {

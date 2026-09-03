@@ -1,7 +1,4 @@
-export function fibonacciSequence(
-  startSequence: number[],
-  length: number
-): number[] {
+export function fibonacciSequence(startSequence: number[], length: number): number[] {
   const response: number[] = [];
 
   for (let i = 0; i < length; i++) {

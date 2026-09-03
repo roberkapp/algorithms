@@ -1,7 +1,7 @@
 export const checkPassFourHourPeriod = (logs: string[]): boolean => {
   return logs.every((log, i) => {
     if (i < logs.length - 1) {
-      let limit = new Date(log);
+      const limit = new Date(log);
       limit.setUTCHours(limit.getUTCHours() + 4);
       return limit < new Date(logs[i + 1]);
     }

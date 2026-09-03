@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { durationFormat } from './durationFormat';
-import { test, expect } from '@jest/globals';
 
 test('Given 500 seconds should return 8:20', () => {
   expect(durationFormat(500)).toEqual('8:20');

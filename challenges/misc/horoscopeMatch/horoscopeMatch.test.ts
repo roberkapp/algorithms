@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { horoscopeMatch } from './horoscopeMatch';
-import { test, expect } from '@jest/globals';
 import { ZODIACS } from './models';
 
 test('Expects Libra and Sagittarius to be 80%', () => {

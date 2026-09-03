@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { thermostatAdjuster2 } from './thermostatAdjuster2';
-import { test, expect } from '@jest/globals';
 
 test('Given a current temperature of 32 in Farenheit and a target of 0°Celcius should return Hold', () => {
   expect(thermostatAdjuster2(32, 0)).toBe('Hold');

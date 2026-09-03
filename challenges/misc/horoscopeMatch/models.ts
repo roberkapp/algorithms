@@ -13,11 +13,4 @@ export enum ZODIACS {
   PISCES = 'Pisces',
 }
 
-export type Percentages =
-  | '100%'
-  | '90%'
-  | '80%'
-  | '50%'
-  | '40%'
-  | '30%'
-  | '20%';
+export type Percentages = '100%' | '90%' | '80%' | '50%' | '40%' | '30%' | '20%';

@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { wordGuesser } from './wordGuesser';
 
 test('Given a secret word: "APPLE" and a guess: "POPPA" should return 10201', () => {

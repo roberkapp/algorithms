@@ -1,10 +1,9 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { tribonacciSequence } from './tribonacciSequence';
 
 test('Given a start sequence of: [0,0,1] and a length of 20 should return [0, 0, 1, 1, 2, 4, 7, 13, 24, 44, 81, 149, 274, 504, 927, 1705, 3136, 5768, 10609, 19513]', () => {
   expect(tribonacciSequence([0, 0, 1], 20)).toEqual([
-    0, 0, 1, 1, 2, 4, 7, 13, 24, 44, 81, 149, 274, 504, 927, 1705, 3136, 5768,
-    10609, 19513,
+    0, 0, 1, 1, 2, 4, 7, 13, 24, 44, 81, 149, 274, 504, 927, 1705, 3136, 5768, 10609, 19513,
   ]);
 });
 

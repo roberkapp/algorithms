@@ -15,8 +15,7 @@ export const responseGenerator = (hour: number, minutes: number): string => {
   let response = responses[minutes];
 
   if (!response) {
-    if (minutes >= 1 && minutes <= 29)
-      response = `${minutes} minutes past ${hour}`;
+    if (minutes >= 1 && minutes <= 29) response = `${minutes} minutes past ${hour}`;
     else `${units[UNITS.MINUTES] - minutes} minutes to ${hour + 1}`;
   }
   return response;

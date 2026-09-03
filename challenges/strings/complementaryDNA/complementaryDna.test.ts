@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { complementaryDNA } from './complementaryDna';
-import { test, expect } from '@jest/globals';
 
 test('Given a string: "ACGT" should return "TGCA"', () => {
   expect(complementaryDNA('ACGT')).toEqual('TGCA');

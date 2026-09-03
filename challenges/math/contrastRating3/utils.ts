@@ -15,9 +15,6 @@ export const getChannels = (rgb: number[]): number[] =>
   });
 
 export const calculateLuminance = (rgb: number[]): number =>
-  rgb[0] * constants.luminanceR +
-  rgb[1] * constants.luminanceG +
-  rgb[2] * constants.luminanceB;
+  rgb[0] * constants.luminanceR + rgb[1] * constants.luminanceG + rgb[2] * constants.luminanceB;
 
-export const getLuminance = (rgb: number[]): number =>
-  calculateLuminance(getChannels(rgb));
+export const getLuminance = (rgb: number[]): number => calculateLuminance(getChannels(rgb));

@@ -1,10 +1,7 @@
 export function exactChange(amount: number): number {
   const coinValues = [25, 10, 5, 1];
 
-  const changePosibilities = (
-    remainingAmount: number,
-    coinIndex: number
-  ): number => {
+  const changePosibilities = (remainingAmount: number, coinIndex: number): number => {
     // me pase.
     if (remainingAmount < 0 || coinIndex === coinValues.length) return 0;
     // encontre un cambio exacto
@@ -19,8 +16,7 @@ export function exactChange(amount: number): number {
       // ejemplo moneda de 5 y moneda de 1.
       const diff = remainingAmount - coinValue;
       return (
-        changePosibilities(diff, coinIndex) +
-        changePosibilities(remainingAmount, coinIndex + 1)
+        changePosibilities(diff, coinIndex) + changePosibilities(remainingAmount, coinIndex + 1)
       );
     }
   };

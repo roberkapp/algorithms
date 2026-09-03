@@ -2,11 +2,7 @@ export function launchFuel(payload: number): string {
   const kgsPerLtOfFuel = 5;
   const weightLimit = 1;
 
-  const getFuelNeeded = (
-    originalPayload: number,
-    totalPayload: number,
-    currentFuel: number
-  ) => {
+  const getFuelNeeded = (originalPayload: number, totalPayload: number, currentFuel: number) => {
     const fuelNeeded = totalPayload / kgsPerLtOfFuel;
     const totalMass = fuelNeeded + originalPayload;
 

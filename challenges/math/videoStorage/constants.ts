@@ -1,4 +1,4 @@
-import { DRIVE_UNITS, VIDEO_UNITS } from './models';
+import type { DRIVE_UNITS, VIDEO_UNITS } from './models';
 
 export const bytesVideoUnitEquivalences: Record<VIDEO_UNITS, number> = {
   B: 1,

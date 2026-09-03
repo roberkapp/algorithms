@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { battle } from './battle';
-import { test, expect } from '@jest/globals';
 
 test('Given a war between "Hello" and "World" the result should be "We lost"', () => {
   expect(battle('Hello', 'World')).toBe('We lost');

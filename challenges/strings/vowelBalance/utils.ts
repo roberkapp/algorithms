@@ -3,5 +3,4 @@ export const getHalfs = (s: string): string[] => {
   return [s.slice(0, half), s.slice(s.length - half)];
 };
 
-export const vowelCounter = (s: string): number =>
-  (s.match(/[aeiou]/gi) || []).length;
+export const vowelCounter = (s: string): number => (s.match(/[aeiou]/gi) || []).length;

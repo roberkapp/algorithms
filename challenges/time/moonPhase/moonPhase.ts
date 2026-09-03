@@ -1,4 +1,4 @@
-import { MOON_PHASES, Phase } from './models';
+import { MOON_PHASES, type Phase } from './models';
 
 export function moonPhase(dateString: string): MOON_PHASES {
   const phases: Phase[] = [
@@ -17,5 +17,7 @@ export function moonPhase(dateString: string): MOON_PHASES {
   //Ahora calculo en que dia del ciclo esta: Como es un ciclo de 28 días:
   const cycle = (days % 28) + 1; // + 1 porque arranca en día 1 no en 0.
 
-  return phases.find(([start, end]) => cycle >= start && cycle <= end)![2];
+  const phase = phases.find(([start, end]) => cycle >= start && cycle <= end);
+  if (!phase) return MOON_PHASES.NEW;
+  return phase[2];
 }

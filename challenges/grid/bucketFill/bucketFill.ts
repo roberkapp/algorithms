@@ -5,11 +5,7 @@
 // Paso 2: checkeo que sea el oldValue.
 // Paso 3: si existe y es oldValue tengo que updatearlo por el nuevo.
 // Paso 4: voy vecino por vecino checkeando lo mismo y pintando de ser necesario
-export function bucketFill(
-  grid: string[][],
-  [row, col]: number[],
-  newValue: string
-): string[][] {
+export function bucketFill(grid: string[][], [row, col]: number[], newValue: string): string[][] {
   const directions = [
     [-1, 0],
     [0, 1],

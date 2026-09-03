@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { getSpokenTime } from './spokenTime';
-import { test, expect } from '@jest/globals';
 
 test("Given an hour angle of 90° and a minutes angle of 0° should return 3 o'clock ", () => {
   expect(getSpokenTime(90, 0)).toBe("3 o'clock");

@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { spiralMatrix } from './spiralMatrix';
-import { test, expect } from '@jest/globals';
 
 test('Given a matrix [["a", "b", "c", "d"], ["l", "m", "n", "e"], ["k", "p", "o", "f"], ["j", "i", "h", "g"]] should return ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p"]', () => {
   expect(
@@ -8,23 +8,6 @@ test('Given a matrix [["a", "b", "c", "d"], ["l", "m", "n", "e"], ["k", "p", "o"
       ['l', 'm', 'n', 'e'],
       ['k', 'p', 'o', 'f'],
       ['j', 'i', 'h', 'g'],
-    ])
-  ).toEqual([
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-  ]);
+    ]),
+  ).toEqual(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']);
 });

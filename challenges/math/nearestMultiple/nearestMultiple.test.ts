@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { nearestMultiple } from './nearestMultiple';
-import { test, expect } from '@jest/globals';
 
 test('Given a integer 5 and a multiple of 3 should return 6', () => {
   expect(nearestMultiple(5, 3)).toBe(6);

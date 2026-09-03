@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { isValidIPv4 } from './isValidIpv4';
 
 test('Given an ipv4 code: "192.167.1.1" should return true', () => {

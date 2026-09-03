@@ -1,5 +1,5 @@
+import { expect, test } from '@jest/globals';
 import { nthPrime } from './nthPrime';
-import { test, expect } from '@jest/globals';
 
 test('Given the 5th prime number the answer should be 11', () => {
   expect(nthPrime(5)).toBe(11);
