@@ -2,4 +2,3 @@ logs
 *.log
 dist
 node_modules
-bun.lock
