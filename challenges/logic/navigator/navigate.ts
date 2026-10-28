@@ -8,14 +8,10 @@ export function navigate(commands: string[]): string {
       history.splice(index + 1);
       history.push(command.slice(6));
       index++;
-    }
-
-    if (command === 'Back') {
-      if (index > 0) index--;
-    }
-
-    if (command === 'Forward') {
-      if (index < history.length - 1) index++;
+    } else if (command === 'Back') {
+      index = Math.max(0, index - 1);
+    } else {
+      index = Math.min(history.length - 1, index + 1);
     }
   }
   return history[index];
