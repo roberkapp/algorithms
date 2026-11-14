@@ -1,7 +1,7 @@
 export function arrayShift(arr: (string | number)[], n: number) : (string|number)[]{
     if(!arr.length) return [];
 
-    //Normalize the shift if its bigger than the arr's length;
+    //Normalize the shift if it is bigger than the arr's length;
     n %= arr.length;
 
     const newArr : Array<string|number> = [];
